@@ -34,10 +34,15 @@ body {
     padding: 0;
     text-align: center;
     width: 34px;
+    transition: .2s linear;
   }
   
   .square:focus {
     outline: none;
+  }
+
+  .square:hover {
+      background-color: rgb(233, 233, 233);
   }
   
   .kbd-navigation .square:focus {
@@ -45,8 +50,7 @@ body {
   }
   
   .game {
-    display: flex;
-    flex-direction: row;
+
   }
   
   .game-info {
@@ -55,7 +59,7 @@ body {
   }
 
   .game-board {
-    display: flex;
+    display: inline-flex;
     width: 100%;
   }
 
@@ -65,8 +69,10 @@ body {
    }
   
    .position {
-       max-width: 200px;
-       min-height: 100px;
+       display: inline-block;
+       min-width: 100px;
+       min-height: 150px;
        width: 100%;
        background-color: #fff;
+       text-align: center;
    }
